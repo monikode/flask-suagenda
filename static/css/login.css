@@ -1,0 +1,88 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.wrapper {
+  flex: 1;
+box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px var(--screen-padding-horizontal);
+
+
+  max-width: 780px;
+  width: 100%;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  width: 100%;
+}
+.title span {
+  position: relative;
+}
+
+.title .vector {
+  position: absolute;
+  bottom: 60%;
+  left: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+
+form label {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 119%;
+  color: rgba(0, 0, 0, 0.57);
+  margin-bottom: 5px;
+}
+form input {
+  background-color: var(--light-gray-color);
+  border: none;
+  outline: none;
+
+  height: 40px;
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: var(--primary-color);
+  padding: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 119%;
+  color: #fff;
+  border: none;
+  margin-top: 2vh;
+  border-radius: 13px;
+}
+
+.sign-up {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 119%;
+}
+
+.sign-up span {
+  color: var(--primary-color);
+}

@@ -1,0 +1,107 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px var(--screen-padding-horizontal);
+}
+
+.illustration .agenda-wrapper {
+  position: relative;
+  width: min-content;
+
+  margin-bottom: 3vh;
+}
+
+.illustration .vector {
+  position: absolute;
+  height: 10vh;
+}
+
+.illustration :nth-child(2) {
+  right: 80%;
+  bottom: 60%;
+}
+
+.illustration :nth-child(3) {
+  left: 70%;
+  bottom: 0;
+}
+
+.illustration :nth-child(4) {
+  left: 65%;
+  bottom: 85%;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+.title span {
+  position: relative;
+}
+
+.title span .vector {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 80%;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 119%;
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.57);
+}
+
+.action {
+  position: relative;
+}
+
+.action button {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 20vmin;
+  width: 20vmin;
+
+  width: 100px;
+height: 100px;
+  outline: none;
+  border: none;
+
+  font-size: 50px;
+
+  border-radius: 40px;
+
+  margin-top: 50px;
+
+  cursor: pointer;
+}
+
+.action .vector {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+}
