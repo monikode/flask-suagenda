@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ title }} - FlaskApp</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    {% block links %} {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <div class="logotype"><span>SUA</span>GENDA</div>
+      <div class="right">N U</div>
+    </nav>
+    <div class="wrapper">
+      <div class="top">
+        <div class="title">{{ title }}</div>
+        <div class="right">
+          <a
+            href="{{ url_for('daily_view') }}"
+            class="daily-view {% if view == 'D' %}active{% endif %}"
+            ><iconify-icon
+              icon="material-symbols:calendar-view-day-rounded"
+              width="24"
+            ></iconify-icon
+          ></a>
+          <a
+            href="{{ url_for('month_view') }}"
+            class="month-view {% if view == 'M' %}active{% endif %}"
+            
+          >
+            <iconify-icon icon="material-symbols:calendar-month" width="24"></iconify-icon
+          ></a>
+        </div>
+      </div>
+      {% block content %} {% endblock %}
+    </div>
+
+    <div id="fab">+</div>
+  </body>
+</html>

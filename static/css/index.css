@@ -4,12 +4,14 @@
 }
 body {
   --primary-color: #176629;
-  --light-gray-color: #F2F3F3;
+  --light-gray-color: #f2f3f3;
   --screen-padding-horizontal: 30px;
   --screen-padding-vertical: 30px;
 
   margin: 0;
   padding: 0;
+
+  min-height: 100vh;
 }
 
 nav {
@@ -20,11 +22,73 @@ nav {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  width: 100%;
   /* identical to box height */
 
   letter-spacing: 0.19em;
+
+  box-sizing: border-box;
 }
 
 nav span {
   color: var(--primary-color);
+}
+
+.wrapper {
+  padding: 30px var(--screen-padding-horizontal);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.top .right {
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+
+}
+
+.top .right a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.42);
+}
+
+
+
+.top .right .active {
+  color: var(--primary-color);
+}
+
+#fab {
+  position: fixed;
+  bottom: var(--screen-padding-vertical);
+  right: var(--screen-padding-horizontal);
+
+  background-color: var(--primary-color);
+
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+
+  color: #ffffff;
 }

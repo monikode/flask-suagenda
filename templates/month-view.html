@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block links %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/index.css') }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/month-view.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="month">
+  <div class="arrow-left"><</div>
+  <div class="title">
+    Janeiro
+    <div class="year">2023</div>
+  </div>
+  <div class="arrow-right">></div>
+</div>
+
+<div class="container">
+  <div class="week">
+    <div>D</div>
+    <div>S</div>
+    <div>T</div>
+    <div>Q</div>
+    <div>Q</div>
+    <div>S</div>
+    <div>S</div>
+  </div>
+  <div class="days">
+    {% for day in range(35) %}
+    <div class="day">{{day}}</div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="events">
+  <div class="title">Eventos</div>
+  <div class="list-wrapper">
+    <div class="list"></div>
+  </div>
+</div>
+{% endblock %}

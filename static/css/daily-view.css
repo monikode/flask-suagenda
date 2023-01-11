@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  max-height: 100vh;
+  align-items: center;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  max-width: 1024px;
+}
+.top-dates {
+  position: relative;
+  width: 100%;
+  min-height: 75px;
+
+  margin: 0 auto;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+
+  max-width: 400px;
+}
+
+.top-dates .wrapper {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: initial;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+
+  transform: translateX(-20%);
+}
+
+.top-dates .wrapper .day {
+  width: 20%;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: 0;
+  flex-shrink: 0;
+  opacity: 0.48;
+}
+
+.top-dates .wrapper .day .date {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.top-dates .wrapper .day .week {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.top-dates .wrapper .day.active {
+  opacity: 1;
+}
+
+.top-dates .wrapper .day.active .date {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.top-dates .wrapper .day.active .week {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.top-dates .line {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 4%;
+  left: calc(50% - 2%);
+
+  border-radius: 8px;
+
+  background-color: var(--primary-color);
+}
+
+.events-wrapper {
+  flex: 1;
+
+  position: relative;
+
+  overflow: auto;
+  max-height: 100%;
+}
+
+.list {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.event {
+  background-color: var(--light-gray-color);
+  padding: 20px;
+  border-radius: 13px;
+}
+
+.event .hour {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.52);
+}
+
+.event .title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+}
+.event .desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
