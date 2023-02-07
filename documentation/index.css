@@ -9,8 +9,275 @@ html {
 }
 body {
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
+.blur {
+  -webkit-user-select: none !important; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  z-index: -1;
+  position: absolute;
+}
+
+header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  box-sizing: border-box;
+  flex-wrap: wrap-reverse;
+}
+
+header .left {
+  flex: 3;
+  min-width: 300px;
+}
+header .title {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+header .title span {
+  text-decoration-line: underline;
+  font-weight: 400;
+}
+
+header .intro {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.57);
+  font-size: 1.2rem;
+}
+
+header .agenda {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .agenda img {
+  flex: 1;
+  max-width: 300px;
+}
+
+header .blur {
+  position: absolute;
+  user-select: none;
+}
+
+header .blur.one {
+  top: -70%;
+  left: -40%;
+}
+
+header .blur.two {
+  bottom: -60%;
+  right: -40%;
+}
+
+.requirements {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.requirements .title {
+  font-weight: 600;
+  font-size: 4rem;
+  position: relative;
+}
+
+.requirements .title img {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-width: 100%;
+  transform: translateX(15%);
+}
+
+.requirements .blur {
+  position: absolute;
+  bottom: -60%;
+  left: -50%;
+}
+
+.black-wrapper {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.functional,
+.non-functional {
+  min-height: 80vh;
+  display: flex;
+  max-width: 80vw;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.black-wrapper .container {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+
+.functional .left {
+  font-size: 3rem;
+  box-sizing: border-box;
+  text-align: end;
+}
+
+.functional .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffffcf;
+}
+
+.black-wrapper .requirement {
+  border-bottom: 1.5px solid #ffffffa6;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.non-functional .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #ffffffcf;
+
+  text-align: end;
+}
+
+.non-functional .right {
+  font-size: 3rem;
+  box-sizing: border-box;
+}
+
+/* ==================================== */
+
+.business {
+  min-height: 60vh;
+  position: relative;
+}
+
+.business .blur {
+  bottom: -120%;
+  left: -70%;
+}
+
+/* ====================================== */
+.use-case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw;
+  position: relative;
+  color: #fff;
+}
+
+.use-case img {
+  min-width: 80vw;
+  max-height: 60vw;
+  object-fit: contain;
+  object-position: center center;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.use-case .title {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.use-case .black {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #1c1c1c;
+  z-index: -1;
+}
+
+/* ===================== */
+
+.system-metaphor {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.system-metaphor .title {
+  padding-bottom: 2rem;
+}
+.system-metaphor img {
+  width: 100vw;
+  max-height: 40vw;
+  object-fit: contain;
+  object-position: center center;
+  background-color: #fff;
+}
+/* ========================================= */
+.ux-screens {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ux-screens .left {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  font-size: 2.5rem;
+  text-align: end;
+  box-sizing: border-box;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.ux-screens .right {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  min-width: 450px;
+
+}
+.ux-screens section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.ux-screens img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.ux-screens .right .title {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ================== */
 .wrapper {
   background-color: #fff;
   padding: 30px 100px;
@@ -36,4 +303,10 @@ body {
 .subtitle {
   font-size: 18px;
   font-weight: 500;
+}
+
+.text {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-weight: 300;
 }

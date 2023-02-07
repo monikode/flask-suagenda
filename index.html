@@ -8,14 +8,138 @@
     <link rel="stylesheet" href="documentation/index.css" />
   </head>
   <body>
+    <header>
+      <img src="documentation/img/blur.svg" class="blur one" />
+      <img src="documentation/img/blur.svg" class="blur two" />
+
+      <div class="left">
+        <div class="title"><span>SUA</span>GENDA</div>
+        <div class="intro">Cadastre eventos e organize seu calendário</div>
+      </div>
+      <div class="agenda">
+        <img src="documentation/img/agenda.png" />
+      </div>
+    </header>
+    <div class="requirements">
+      <img src="documentation/img/blur.svg" class="blur" />
+      <div class="title">
+        Requisitos
+        <img src="documentation/img/underline.svg" />
+      </div>
+    </div>
+
+    <div class="black-wrapper">
+      <div class="functional">
+        <div class="container">
+          <div class="left title">
+            Requisitos <br />
+            funcionais
+          </div>
+          <div class="right">
+            <div class="requirement">
+              O usuário poderá cadastrar, editar, visualizar e deletar eventos.
+            </div>
+            <div class="requirement">Manter usuários</div>
+            <div class="requirement">Enviar notificações de eventos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="non-functional">
+        <div class="container">
+          <div class="left">
+            <div class="requirement">
+              A aplicação utilizará MySQL como banco de dados.
+            </div>
+            <div class="requirement">
+              A aplicação deve ser implementado na linguagem Python utilizando o
+              framework Flask
+            </div>
+            <div class="requirement">
+              A aplicação deverá ser responsiva e se adaptar a tamanhos de tela
+              diferentes.
+            </div>
+          </div>
+          <div class="right title">Requisitos <br />não-funcionais</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="business">
+      regra de negocio
+      <img src="documentation/img/blur.svg" class="blur" />
+    </div>
+    <div class="use-case">
+      <div class="black"></div>
+      <img src="documentation/img/caso-de-uso.png" alt="" />
+      <div class="title">Diagrama de caso de uso</div>
+    </div>
+
+    <div class="system-metaphor">
+      <div class="title">System Metaphor</div>
+
+      <img src="documentation/img/caso-de-uso.png" alt="" />
+    </div>
+
+    <div class="ux-screens" id="ux-wrapper">
+      <div class="left title" id="ux-title">Documentação <br />de UX</div>
+      <div class="right">
+        <div class="title">Login</div>
+        <section>
+          <img src="documentation/img/wireframes/login-1.svg" alt="" />
+          <img src="documentation/img/wireframes/login-2.svg" alt="" />
+        </section>
+        <div class="title">Cadastro de usuário</div>
+        <section>
+          <img src="documentation/img/wireframes/register-1.svg" alt="" />
+          <img src="documentation/img/wireframes/register-2.svg" alt="" />
+          <img src="documentation/img/wireframes/register-3.svg" alt="" />
+          <img src="documentation/img/wireframes/register-4.svg" alt="" />
+        </section>
+        <div class="title">Atualizar e excluir usuário</div>
+        <section>
+          <img src="documentation/img/wireframes/update-1.svg" alt="" />
+          <img src="documentation/img/wireframes/update-2.svg" alt="" />
+          <img src="documentation/img/wireframes/update-3.svg" alt="" />
+        </section>
+        <div class="title">Deslogar</div>
+        <section>
+          <img src="documentation/img/wireframes/logout-1.svg" alt="" />
+          <img src="documentation/img/wireframes/logout-2.svg" alt="" />
+        </section>
+        <div class="title">Visualizar dia</div>
+        <section>
+          <img src="documentation/img/wireframes/view-day.svg" alt="" />
+        </section>
+        <div class="title">Visualizar calendário</div>
+        <section>
+          <img src="documentation/img/wireframes/calendar-1.svg" alt="" />
+          <img src="documentation/img/wireframes/calendar-2.svg" alt="" />
+        </section>
+        <div class="title">Notificar evento</div>
+        <section>
+          <img src="documentation/img/wireframes/notif-1.svg" alt="" />
+          <img src="documentation/img/wireframes/notif-2.svg" alt="" />
+          <img src="documentation/img/wireframes/notif-3.svg" alt="" />
+        </section>
+        <div class="title">Criar evento</div>
+        <section>
+          <img src="documentation/img/wireframes/create-1.svg" alt="" />
+        </section>
+        <div class="title">Atualizar e excluir evento</div>
+        <section>
+          <img src="documentation/img/wireframes/event-1.svg" alt="" />
+          <img src="documentation/img/wireframes/event-2.svg" alt="" />
+        </section>
+      </div>
+    </div>
+
     <div class="wrapper">
       <div class="page-title"><span>SUA</span>GENDA - Documentação</div>
-      <div class="title">Introdução</div>
+
       <div class="title">Requisitos</div>
-      <div class="subtitle">Lista de requisitos funcionais</div>
-      <div class="subtitle">Lista de requisitos não funcionais</div>
+
       <div class="subtitle">Lista de regras de negócio</div>
-      <div class="subtitle">Diagrama de caso de uso</div>
       <div class="subtitle">System Metaphor</div>
       <div class="subtitle">Documentação da UX</div>
       <div class="subtitle">Diagrama de Fluxo de Telas</div>
@@ -27,5 +151,6 @@
       <div class="subtitle">Modelo C4 - Nivel 3</div>
       <div class="subtitle">Modelo C4 - Nivel 4</div>
     </div>
+    <script src="documentation/index.js"></script>
   </body>
 </html>

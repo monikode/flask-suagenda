@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/register.css') }}"
+    />
     <title>Document</title>
-</head>
-<body>
-    tarara
-</body>
+  </head>
+
+  <body id="register-page" class="dark">
+    <nav>
+      <div class="logotype"><span>SUA</span>GENDA</div>
+    </nav>
+    <div class="progress-bar"></div>
+    <div class="form-wrapper">
+      <form action="javascript:alert( 'success!' );">
+        <div id="step-1">
+          <div class="step-title">Primeiro, precisamos saber seu nome</div>
+          <input type="text" />
+          <button>Vamos lá</button>
+        </div>
+
+        <div id="step-2">
+          <div class="step-title">Fulano, nos informe o seu melhor e-mail</div>
+
+          <label for="">E-mail</label>
+          <input type="text" placeholder="seuemail@gmail.com" />
+          <label for="">Confirme seu e-mail</label>
+          <input type="text" placeholder="seuemail@gmail.com" />
+          <button class="primary">Continuar</button>
+        </div>
+
+        <div id="step-3">
+          <div class="step-title">Me diga seu aniversário</div>
+          <div class="step-subtitle">Você pode nos dizer depois</div>
+
+          <input type="date" id="birthday" />
+
+          <button class="empty-date primary">Pular</button>
+          <button class="with-date primary">Continuar</button>
+        </div>
+        <div id="step-4">
+          <div class="step-title">Agora defina sua senha</div>
+
+          <label for="">Senha</label>
+          <input type="password" />
+          <label for="">Confirme sua senha</label>
+          <input type="password" />
+          <button class="primary" type="submit">Finalizar</button>
+        </div>
+      </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+  </body>
 </html>

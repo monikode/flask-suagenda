@@ -20,23 +20,25 @@
     </nav>
     <div class="wrapper">
       <div class="title">
-        <span> Entre na sua conta
-            
-            <img
+        <span>
+          Entre na sua conta
+
+          <img
             class="vector"
             src="{{ url_for('static', filename='img/login/handdrawn1.svg') }}"
             alt=""
-          /></span>
+        /></span>
       </div>
-      <form action="">
+      <form method="post">
         <label for="">E-mail</label>
-        <input type="text" />
+        <input type="text" name="email" />
         <label for="">Senha</label>
-        <input type="password" />
+        <input type="password" name="password" />
         <button class="login-button">Entrar</button>
       </form>
       <div class="sign-up">
-        Não possui uma conta? <a href="{{ url_for('register') }}"> Cadastre-se.</a>
+        Não possui uma conta?
+        <a href="{{ url_for('register') }}"> Cadastre-se.</a>
       </div>
     </div>
   </body>
