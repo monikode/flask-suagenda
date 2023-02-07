@@ -339,6 +339,7 @@ header .blur.two {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .c4 .title {
@@ -350,8 +351,11 @@ header .blur.two {
 .c4 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  max-width: calc(1600px + 3rem);
+  margin: 0 auto;
   gap: 1rem;
   justify-content: center;
+  place-items: center center;
 }
 
 .c4 img {
