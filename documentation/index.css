@@ -252,7 +252,6 @@ header .blur.two {
   padding-bottom: 3rem;
   padding-left: 2rem;
   min-width: 450px;
-
 }
 .ux-screens section {
   display: grid;
@@ -276,7 +275,37 @@ header .blur.two {
   text-decoration: underline;
   font-weight: 500;
 }
+/* =============================================== */
+.mer {
+  display: flex;
+  min-height: 80vh;
+}
+.mer .left {
+  background-color: #176629;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: end;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
+.mer .right {
+  flex: 1;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.mer .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #fff;
+}
 /* ================== */
 .wrapper {
   background-color: #fff;
