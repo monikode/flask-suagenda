@@ -21,6 +21,10 @@ html {
   user-select: none;
   z-index: -1;
   position: absolute;
+  width: 180vw;
+  height: 180vw;
+  object-fit: contain;
+  object-position: center center;
 }
 
 header {
@@ -72,13 +76,15 @@ header .blur {
 }
 
 header .blur.one {
-  top: -70%;
-  left: -40%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
 }
 
 header .blur.two {
-  bottom: -60%;
-  right: -40%;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
 }
 
 .requirements {
@@ -107,8 +113,9 @@ header .blur.two {
 
 .requirements .blur {
   position: absolute;
-  bottom: -60%;
-  left: -50%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
 }
 
 .black-wrapper {
