@@ -7,7 +7,8 @@ html {
 * {
   font-family: "Poppins";
 }
-body {
+body,
+html {
   margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
@@ -89,8 +90,11 @@ header .blur.two {
 }
 .requirements .title {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 10vw, 6rem);
   position: relative;
+  max-width: 70vw;
+  text-align: center;
+  /* width: min-content; */
 }
 
 .requirements .title img {
@@ -119,18 +123,25 @@ header .blur.two {
   max-width: 80vw;
   margin: 0 auto;
   align-items: center;
+  padding: 3rem 1rem;
 }
 
 .black-wrapper .container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap: 3rem;
+}
+
+.non-functional .container {
+  flex-wrap: wrap-reverse;
 }
 
 .functional .left {
   font-size: 3rem;
   box-sizing: border-box;
   text-align: end;
+  margin-left: auto;
 }
 
 .functional .right {
@@ -139,6 +150,7 @@ header .blur.two {
   flex-direction: column;
   gap: 2rem;
   color: #ffffffcf;
+  min-width: 300px;
 }
 
 .black-wrapper .requirement {
@@ -251,7 +263,7 @@ header .blur.two {
   padding-top: 2rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
-  min-width: 450px;
+  min-width: 300px;
 }
 .ux-screens section {
   display: grid;
@@ -279,25 +291,29 @@ header .blur.two {
 .mer {
   display: flex;
   min-height: 80vh;
+  flex-wrap: wrap-reverse;
 }
 .mer .left {
+  flex: 2;
   background-color: #176629;
   color: #fff;
   box-sizing: border-box;
   padding: 2rem;
-  font-size: 2rem;
   text-align: end;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }
 
 .mer .right {
-  flex: 1;
+  flex: 3;
   padding: 1rem;
   box-sizing: border-box;
   background-color: #fff;
+  min-width: 250px;
 }
 
 .mer .right img {
@@ -312,6 +328,10 @@ header .blur.two {
   color: #fff;
   min-height: 100vh;
   padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .c4 .title {
